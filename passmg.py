@@ -97,7 +97,7 @@ def Main():
         if entry in pws:
             print("entry   : " + str(entry))
             print("password: " + str(pws[entry]))
-        else:
+        else:  # if there is no existing password in the database
             print("No entry for " + str(entry) + ", creating new...")
             newPass = input("New entry - enter password for "+entry+": ")
             pws[entry] = newPass
